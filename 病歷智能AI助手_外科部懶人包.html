@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>病歷智能AI助手 — 外科部懶人包（一頁重點）</title>
+<style>
+:root{--teal:#0b7285;--teal-d:#0a5c6b;--teal-l:#e3f3f5;--ink:#1f2d33;--muted:#5b6b72;--line:#dfe7ea;--bg:#f6f9fa;
+--green:#1d8a5b;--green-bg:#e7f6ee;--amber-bg:#fdf3df;--amber:#b6822a;--red:#c0392b;--red-bg:#fbe9e7;--blue:#1864ab;--blue-bg:#e7f0fb;
+--sh:0 1px 3px rgba(20,40,50,.08),0 6px 20px rgba(20,40,50,.06)}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Microsoft JhengHei","PingFang TC","Noto Sans TC",-apple-system,"Segoe UI",sans-serif;
+color:var(--ink);background:var(--bg);line-height:1.7;font-size:16.5px}
+.wrap{max-width:860px;margin:0 auto;padding:0 18px 60px}
+header{background:linear-gradient(135deg,var(--teal),#13a3b8);color:#fff;border-radius:0 0 18px 18px;padding:30px 26px;margin:0 -18px 22px;box-shadow:var(--sh)}
+header .k{font-size:12px;letter-spacing:2px;opacity:.9;margin:0 0 6px}
+header h1{margin:0 0 8px;font-size:26px}
+header p{margin:0;opacity:.95;font-size:15px}
+h2{font-size:20px;color:var(--teal-d);border-bottom:3px solid var(--teal-l);padding-bottom:7px;margin:26px 0 12px;display:flex;gap:9px;align-items:center}
+h2 .n{background:var(--teal);color:#fff;width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:15px}
+.box{border-radius:11px;padding:13px 16px;margin:12px 0;border-left:6px solid;box-shadow:var(--sh);background:#fff}
+.box h3{margin:0 0 5px;font-size:16px}
+.box ul{margin:5px 0 0;padding-left:20px}.box li{margin:4px 0}
+.danger{background:var(--red-bg);border-color:var(--red)}.danger h3{color:var(--red)}
+.good{background:var(--green-bg);border-color:var(--green)}.good h3{color:var(--green)}
+.tip{background:var(--blue-bg);border-color:var(--blue)}.tip h3{color:var(--blue)}
+.warn{background:var(--amber-bg);border-color:var(--amber)}.warn h3{color:#8a6516}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14.5px;background:#fff;border-radius:10px;overflow:hidden;box-shadow:var(--sh)}
+th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+th{background:var(--teal);color:#fff}
+tbody tr:nth-child(even){background:#f7fbfc}
+.step b{display:inline-block;background:var(--teal);color:#fff;width:22px;height:22px;line-height:22px;text-align:center;border-radius:50%;font-size:13px;margin-right:6px}
+.pill{display:inline-block;background:var(--teal-l);color:var(--teal-d);border-radius:16px;padding:2px 10px;font-size:13px;margin:2px 3px 2px 0;font-weight:600}
+.prompt{background:#0f2b31;color:#d7eef0;border-radius:10px;padding:13px 15px;margin:10px 0;font-size:13.5px;
+font-family:"Consolas","Menlo",monospace;line-height:1.65;white-space:pre-wrap;word-break:break-word}
+.prompt .lbl{display:inline-block;background:#13a3b8;color:#fff;font-size:11px;padding:1px 8px;border-radius:5px;margin-bottom:7px;letter-spacing:1px}
+code{background:#eef3f4;border:1px solid #cdd9dc;border-radius:4px;padding:0 4px;font-size:13px}
+a{color:var(--teal)}
+.cta{display:block;text-align:center;background:var(--teal);color:#fff;text-decoration:none;padding:13px;border-radius:11px;font-weight:700;margin:24px 0 0;box-shadow:var(--sh)}
+footer{color:var(--muted);font-size:13px;text-align:center;margin-top:26px;border-top:1px solid var(--line);padding-top:16px}
+@media print{header{background:var(--teal)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.box,table{box-shadow:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="k">高雄榮民總醫院 · 外科部</p>
+  <h1>病歷智能AI助手 — 一頁懶人包</h1>
+  <p>只列最重點。想深入了解，看文末的 <strong>完整版</strong>。</p>
+</header>
+
+<div class="box good"><h3>它是什麼</h3>把病人分散在急診／門診／住院的病歷<strong>一次彙整、生成可編輯的病歷草稿</strong>（入院病摘、術後病程、出院摘要…）。<strong>只是輔助，需人工確認，不能當診斷或醫囑依據。</strong></div>
+
+<h2><span class="n">1</span>怎麼進去</h2>
+<div class="box tip">院內整合資訊系統 →
+<span class="pill">全人照護</span>→<span class="pill">病歷查詢</span>→<span class="pill">整合查詢</span>→<span class="pill">病歷智能AI助手</span><br>
+輸入<strong>病歷號</strong> → 按 <strong>查詢</strong> → 啟動五步驟。（僅開放醫師、藥師）</div>
+
+<h2><span class="n">2</span>五步驟（各一句）</h2>
+<table>
+<tr><td class="step"><b>1</b><strong>選紀錄</strong></td><td>勾選要分析的門診／急診／住院（各近2年、最多10筆）。</td></tr>
+<tr><td class="step"><b>2</b><strong>設定</strong></td><td>調整日期範圍、勾選資料類型。建議按<strong>儲存設定</strong>記住慣用勾選。</td></tr>
+<tr><td class="step"><b>3</b><strong>看資料</strong></td><td>快速確認彙整內容是否正確、完整（可只看檢驗異常值）。</td></tr>
+<tr><td class="step"><b>4</b><strong>下指令生成</strong></td><td>貼 Prompt、選模型 → 生成摘要（右欄可直接手動編輯）。</td></tr>
+<tr><td class="step"><b>5</b><strong>回饋</strong></td><td>填文字＋評分後，才能<strong>複製摘要</strong>，貼回病歷再修改確認。</td></tr>
+</table>
+
+<h2><span class="n">3</span>三條紅線（絕對不要）</h2>
+<div class="box danger"><h3>⛔ 不可以</h3>
+<ul>
+<li>❌ 把<strong>姓名／病歷號／身分證號</strong>打進 Prompt（病人由系統帶入即可）。</li>
+<li>❌ AI 產出<strong>未經人工核對就直接貼進病歷</strong>。</li>
+<li>❌ 把 AI 摘要當成<strong>診斷或醫囑依據</strong>。</li>
+</ul></div>
+
+<h2><span class="n">4</span>兩個好用設定</h2>
+<div class="box good"><h3>👍 建議</h3>
+<ul>
+<li><strong>模型優先選 Claude Sonnet 4.5</strong>（外科病歷產出品質較穩）。結果不佳再換或用「AI 競技場」比較。</li>
+<li>常用任務存成<strong>個人 Prompt 模板</strong>，下次一鍵套用。</li>
+</ul></div>
+
+<h2><span class="n">5</span>Prompt 範例（入院病摘）</h2>
+<p style="font-size:14px;color:var(--muted)"><span class="pill">建議資料類型</span>住院：入院摘要、病程、過去病史、檢驗異常值、影像／檢查報告、用藥</p>
+<div class="prompt"><span class="lbl">PROMPT</span>請依本次住院資料，整理一份外科 admission note 草稿，包含段落：
+CHIEF COMPLAINT / PRESENT ILLNESS / PAST HISTORY（含 past OP history）/ PHYSICAL EXAMINATION 與異常檢驗 / IMAGING & STUDIES / IMPRESSION / PLAN。
+輸出要求：以英文撰寫、用標準醫學縮寫；純文字不要用 Markdown 符號（###、**、---）；段落標題用大寫英文加冒號；條列用減號 (-) 或數字；主訴/特殊描述可用繁體中文；僅依提供資料，缺漏處標註 Not provided，不要臆測。</div>
+<p style="font-size:14px;color:var(--muted)">其他情境（術後病程、出院摘要、術前評估、Weekly Summary）的範例在完整版。</p>
+
+<div class="box warn"><h3>⚠ 一定要做</h3>生成後<strong>逐段對照原始資料人工核對</strong>、依個案修正，再貼成你要簽的內容。AI 可能有幻覺（編造）。</div>
+
+<p style="text-align:center;margin:24px 0 0;font-size:16px">想了解更詳細內容，請 <a href="病歷智能AI助手_外科部操作教學.html"><strong>看完整版教學</strong></a>（含每一步截圖與更多範例）。</p>
+
+<footer>高雄榮民總醫院 研創暨智慧醫療中心｜本教材僅供院內教學參考，內容如與系統實際畫面不符，以系統現況為準。</footer>
+</div>
+</body>
+</html>
